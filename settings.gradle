@@ -1,0 +1,6 @@
+rootProject.name = 'ata-week-8'
+include ':Statics:ShippingBoxes'
+include ':Statics:Restaurant'
+include ':Statics:Fulfillment'
+include ':GroupActivity:AmazonScout'
+include ':Utilities'
