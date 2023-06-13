@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Group Activity &#45; Amazon Scout Unit Tests",
+      "setup": "",
+      "run": "./gradlew groupactivity-amazonscout-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 11,
+      "points": null
+    },
+    {
+      "name": "Statics - Fulfillment Unit Tests",
+      "setup": "",
+      "run": "./gradlew statics-fulfillment-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Statics - Restaurant Unit Tests",
+      "setup": "",
+      "run": "./gradlew statics-restaurant-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Statics - ShippingBoxes Unit Tests",
+      "setup": "",
+      "run": "./gradlew statics-shippingboxes-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
