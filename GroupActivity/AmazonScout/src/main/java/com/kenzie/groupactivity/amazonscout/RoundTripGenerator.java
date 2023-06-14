@@ -1,5 +1,6 @@
 package com.kenzie.groupactivity.amazonscout;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -24,7 +25,17 @@ public class RoundTripGenerator {
      * @return A *new* List with the full round trip sequence of
      *         Navigation steps, beginning with a copy of the {@code outboundSteps}
      */
-    public List<NavigationStep> generateRoundTrip(List<NavigationStep> outboundSteps) {
-        return Collections.emptyList();
+    public static List<NavigationStep> generateRoundTrip(List<NavigationStep> outboundSteps) {
+        List<NavigationStep> roundTripSteps = new ArrayList<>();
+        roundTripSteps.addAll(outboundSteps);
+        roundTripSteps.addAll(NavigationStep.turnAround());
+
+
+        for(int i = outboundSteps.size() - 1; i >= 0; i--){
+            NavigationStep step = outboundSteps.get(i);
+            roundTripSteps.add(NavigationStep.reverseNavigationStep(step));
+        }
+
+        return roundTripSteps;
     }
 }
